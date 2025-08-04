@@ -1,0 +1,29 @@
+
+h1 {
+    text-align: center;
+}
+
+ .calculator {
+      max-width: 440px; /* largura do quadrado*/ 
+      margin: 32px auto;   /*quadrado fica centralizado*/
+      border-radius: 1rem; /*formato do quadrado*/
+      box-shadow: 0 20px 40px rgba(0,0,0,.25); /*sombra dos botoes*/
+      border: 1px solid rgba(255,255,255,.04); /*tamanho e cor das borda*/
+      background-color: rgb(94, 94, 94); /*cor do quadrado*/
+    }
+
+    .resultado {
+        text-align: center;
+        padding: 8px;
+        height: 20%;
+    
+    }
+
+    div#botao {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 8px; /*se mante dentro do quadrado*/
+        gap: 5px; /*espaço entre cada botao*/
+        height: 12rem;
+    }
+   
