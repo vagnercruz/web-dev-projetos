@@ -1,0 +1,43 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+}
+
+.clock {
+    text-align: center;
+    background-color: #121212;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border: 3px solid #ff0000;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.clock:hover {
+    box-shadow: 0 0 40px 20px rgba(255, 0, 0, 0.6);
+}
+
+.time {
+    font-size: 150px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #ff0000;
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+
+.day {
+    font-size: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+}
