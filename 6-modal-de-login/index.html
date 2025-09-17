@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal de Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="openModalBtn">Login</button>
+
+  <div id="modalOverlay" class="overlay hidden">
+    <div class="modal">
+      <h2>Entrar</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail">
+          <small class="error"></small>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" id="password" placeholder="Digite sua senha">
+          <small class="error"></small>
+        </div>
+        <button type="submit">Login</button>
+        <button type="button" id="closeModalBtn" class="close-btn">Fechar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
