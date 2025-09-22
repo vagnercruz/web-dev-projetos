@@ -1,0 +1,140 @@
+:root {
+    --bg: #0f172a;
+    --panel: #1e293b;
+    --accent: #38dbf8;
+    --x-color: #ef4444;
+    --o-color: #22c55e;
+    --text: #e2e8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: var(--panel);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 320px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.status {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+    justify-content: center;
+}
+
+.cell {
+    background: #334155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background: #475569;
+}
+
+.cell.x {
+    color: var(--x-color);
+}
+
+.cell.o {
+    color: var(--o-color);
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-screen button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #0f172a;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#start-screen button:hover {
+    background: #0ea5e9;
+}
+
+#choose-screen button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 1.2em
+}
+
+.cell.win {
+    background: #22c55e;
+    color: #fff;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.cell.x, .cell.o {
+    animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
