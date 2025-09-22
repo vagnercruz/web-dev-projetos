@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen" class="container">
+    <h1>Jogo da Velha</h1>
+    <p>Escolha o modo de jogo:</p>
+    <button id="mode-1v1">👥 Jogar 1x1</button>
+    <button id="mode-bot">🤖 Contra o Bot</button>
+  </div>
+
+  <div id="choose-screen" class="container hidden">
+    <h2>Escolha seu símbolo</h2>
+    <button id="choose-x">❌ jogar como X</button>
+    <button id="choose-o">⭕ jogar como O</button>
+  </div>
+
+  <div id="game-screen" class="container hidden">
+    <h1>Jogo da Velha</h1>
+    <div class="status" id="status">Vez do jogador X</div>
+    
+    <div class="board" id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="restart">Reiniciar</button>
+    <button id="back-btn">Voltar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
