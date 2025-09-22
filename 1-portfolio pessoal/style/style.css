@@ -1,28 +1,66 @@
 body {
-background-color: rgb(255, 255, 255);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    background: linear-gradient(130deg , #000000, #686767,#3f3f3e);
+    color: rgba(255, 255, 255, 0.829);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
 }
 
 
-nav{
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-   
- 
-}
-
- nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    
+ main {
+    text-align: center;
+    margin-right: 40rem;
+    margin-left: 2rem;
  }
 
+
  img{
-    float: left; /*é oq deixa o texto ao lado da foto*/
-     width: 17%; /*tamanho da foto*/
-      margin-right: 20px; /*espaço entre a foto e o texto*/
+    float:left ;
+    width: 13rem;
+    margin-left: 60rem;
+    margin-top: -14.5rem;
+    border-radius: 20%;
       
-    
+}
+
+ .solt {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 10px;
+  max-width: 400px; 
+  padding: 15px; 
+  
+}
+
+.vendas h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem; 
+}
+
+.Habilidades {
+    padding: 20px;
+}
+
+.box {
+  display: flex; 
+  flex-wrap: wrap;
+  margin-top: -4rem;
+  gap: 30px;
+  max-width: 20rem; 
+  padding: 15px; 
+  
+}
+
+.linguagens h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem; 
 }
  
+
+.projects {
+    float: right;
+    margin-top: -39rem;
+    margin-right: 5rem;
+}
+
+.projects h1 {
+    margin: -1rem;
+}
