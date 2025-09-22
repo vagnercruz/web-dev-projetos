@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(20,20,20,0.85);
+  z-index: 100;
+}
+
+.header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #e50914;
+}
+
+.header .perfil {
+    position: fixed;
+    margin-left: 100rem;
+    font-size: 25px;
+    
+}
+
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header .profile img {
+  border-radius: 4px;
+}
+
+.banner {
+  height: 70vh;
+  background: url('https://oimparcial.com.br/app/uploads/2020/09/Dunkirk-banner-1024x538.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 40px 20px 40px;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(20,20,20,0.85) 0%, rgba(20,20,20,0) 100%);
+  z-index: 0;
+}
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+.banner-content .buttons button {
+  background-color: #e50914;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.banner-content .buttons button:nth-child(2) {
+  background-color: rgba(109,109,110,0.7);
+}
+
+/* Categorias */
+.categories {
+  padding: 20px 40px;
+}
+
+.categories h2 {
+  margin-bottom: 15px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card img {
+  width: 150px;
+  height: 225px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .banner-content h1 {
+    font-size: 2em;
+  }
+  
+  .banner-content p {
+    font-size: 0.9em;
+  }
+
+  .card img {
+    width: 100px;
+    height: 150px;
+  }
+}
